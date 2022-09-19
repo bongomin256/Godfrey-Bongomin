@@ -40,11 +40,28 @@ export default function Footer() {
             </ul>
           </div>
           <div className="flex-child">
+            <h4>Social Links</h4>
             <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  Github
+                </a>
+              </li>
             </ul>
           </div>
         </div>
