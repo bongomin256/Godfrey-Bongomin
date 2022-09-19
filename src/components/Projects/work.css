@@ -1,0 +1,132 @@
+const ProjectStyles = styled.div`
+  padding: 200px 0;
+  background-color: var(--dark-bg);
+  color: var(--grey-text);
+  .container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    .project-heading {
+      margin-bottom: 2.2rem;
+    }
+    .pro-items {
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* max-width: 800px; //
+        margin: 0 auto; // */
+        margin-bottom: 100px;
+        //hover of the image
+        &:hover .img img {
+          transform: scale(1.1);
+          z-index: 1;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          /* height: 500px */
+          //   overflow: hidden;
+          //   border-radius: 12px;
+          //   box-shadow: 0 0 20px white;
+          //making the transformation smooth;
+          transition: 0.3s ease transform;
+        }
+        .img {
+          position: relative;
+          border-radius: 12px;
+          overflow: hidden;
+          /* height: 500px; // */
+          //   overflow: hidden;
+          //   box-shadow: 0 0 20px white;
+        }
+        //applying the overlay color on the image
+        /* .img::after {
+          position: absolute;
+          content: "";
+          right: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: var(--lightgreen-text); //
+          opacity: 0.5;
+        } */
+
+        .right {
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // flex-direction: column;
+
+          flex: 1;
+          margin-left: -150px;
+          background-color: var(--dark-bg);
+          padding: 2rem 1rem;
+          border-radius: 12px;
+          /* height: 300px; */
+          box-shadow: 0 0 20px white;
+          z-index: 2;
+          h2 {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            font-weight: bold;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        .left {
+          flex: 2;
+        }
+      }
+      // reversing in the even number of the project items
+      .item:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      // this is making sure the reverse is the same looking as odd items
+      .item:nth-child(even) .right {
+        margin-left: 0;
+      }
+      // this is making sure the reverse is the same looking as odd items
+      .item:nth-child(even) .left {
+        margin-left: -150px;
+      }
+      .btn {
+        background-color: var(--lightgreen-text);
+        color: var(--dark-bg);
+        margin-right: 16px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .item {
+        flex-direction: column;
+      }
+      .item .left {
+        width: 100%;
+      }
+      .item .right {
+        width: 90%;
+        margin-left: 0;
+        margin-top: -150px;
+      }
+      .item:nth-child(even) {
+        flex-direction: column;
+      }
+      .item:nth-child(even) .left {
+        margin-left: 0;
+      }
+    }
+
+    @media only screen and (max-width: 450px) {
+      .buttons {
+        flex-direction: column;
+      }
+      .buttons a {
+        width: 100%;
+      }
+    }
+  }
+`;

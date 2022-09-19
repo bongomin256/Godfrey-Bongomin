@@ -1,13 +1,98 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&family=Ubuntu:wght@300;400&display=swap');
+
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background-color: var(--dark-bg);
+ 
+} */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}                   
+:root {
+  --dark-bg: #081731;
+  --lightdark-bg: #0F1F43;
+  --lightgreen-text: #00FFDB;
+  --lightgreen-hover: hwb(172 7% 7%);
+  --img-overlay: #638483;
+  --grey-text: #8890B3;
 }
+
+/* body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--dark-bg);
+} */
+
+ html {
+   /* font-size: 10px; */
+   /* font-family: Ubuntu; */
+   background-color: var(--dark-bg);
+   /* color: var(--grey-text); */
+
+ }
+
+
+
+
+ul,li  {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+
+}
+
+
+
+/* @media only screen and (max-width: 480px) {
+  .buttons{
+    flex-direction: column;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+
+  /* .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .item {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  } */
+
+  .right {
+    /* width: 90%;
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 150px; */
+    /* margin-top: -150px; */
+
+  }
+  /* .item:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .item:nth-child(even) .left {
+     margin-left: 0;
+  } */
+
+}
+
+
