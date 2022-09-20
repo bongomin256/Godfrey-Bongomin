@@ -47,6 +47,19 @@ const NavMenuStyle = styled.div`
         .active {
           color: white;
         }
+        #resume {
+          outline: none;
+          background-color: transparent;
+          border: 1px solid var(--lightgreen-text);
+          color: var(--lightgreen-text);
+          border-radius: 5px;
+          padding: 10px 7px;
+          cursor: pointer;
+          margin-left: 26px;
+          &:hover {
+            background: var(--lightgreen-hover);
+          }
+        }
       }
       /* .mobile-nav-icon {
         color: white;
@@ -143,7 +156,9 @@ export default function NavMenu() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/resume">Resume</NavLink>
+            <NavLink id="resume" to="/resume">
+              Resume
+            </NavLink>
           </li>
         </ul>
       </header>

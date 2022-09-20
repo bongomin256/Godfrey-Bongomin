@@ -18,19 +18,44 @@ const AboutStyle = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      height: calc(100vh -200px);
+      gap: 60px;
 
       .about-content-left {
         // margin-right: 20px;
+        /* flex: 1; // */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         img {
-          width: 100%;
-          height: auto;
-          border: 4px solid Var(--grey-text);
+          /* width: 100%; */
+          width: 300px; //
+          /* height: auto; */
+          /* border: 4px solid Var(--grey-text); */
           // border-radius: 50%;
-          border-radius: 15px;
+
+          border-radius: 10px;
+          z-index: 1;
+          &:hover ~ .image__border {
+            margin-top: 90px;
+            margin-right: 90px;
+          }
+        }
+        .image__border {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+          border: 2px solid var(--lightgreen-text);
+          border-radius: 10px;
+          margin-bottom: 45px;
+          margin-left: 45px;
+          transition: var(--transition);
+          /* z-index: -1; */
         }
       }
       .about-content-right {
+        /* flex: 1; // */
         .tech {
           display: flex;
           justify-content: space-between;
@@ -70,6 +95,7 @@ export default function About() {
         <div className="container">
           <div className="about-content-left">
             <img src={myimage} alt="" />
+            <div className="image__border"></div>
           </div>
           <div className="about-content-right">
             <p>

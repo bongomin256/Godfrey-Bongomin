@@ -24,9 +24,10 @@
   --dark-bg: #081731;
   --lightdark-bg: #0F1F43;
   --lightgreen-text: #00FFDB;
-  --lightgreen-hover: hwb(172 7% 7%);
+  --lightgreen-hover: #64ffda1a;
   --img-overlay: #638483;
   --grey-text: #8890B3;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 /* body {
