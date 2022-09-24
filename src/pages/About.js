@@ -79,7 +79,8 @@ const AboutStyle = styled.div`
       flex-direction: column;
     }
     .about-header {
-      margin-right: 50%;
+      /* margin-right: 50%; */
+      text-align: center;
     }
   }
 
@@ -90,7 +91,7 @@ const AboutStyle = styled.div`
 export default function About() {
   return (
     <AboutStyle>
-      <div className="about-content">
+      <section className="about-content">
         <h3 className="about-header">About Me</h3>
         <div className="container">
           <div className="about-content-left">
@@ -177,7 +178,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </AboutStyle>
   );
 }

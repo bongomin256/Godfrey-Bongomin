@@ -17,6 +17,7 @@ function App() {
       <div>
         <NavMenu />
         <ToTopScroll />
+
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

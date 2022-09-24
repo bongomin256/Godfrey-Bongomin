@@ -156,9 +156,14 @@ export default function NavMenu() {
             <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-            <NavLink id="resume" to="/resume">
+            <a
+              id="resume"
+              href="https://drive.google.com/file/d/1bsoxIn43pZLXjJjlhiGG6wWKwhNH0b4w/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
-            </NavLink>
+            </a>
           </li>
         </ul>
       </header>

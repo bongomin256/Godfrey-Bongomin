@@ -58,44 +58,85 @@ const HomeStyle = styled.div`
       display: flex;
       margin-top: 25px;
       gap: 30px;
+      /* .resume {
+        text-decoration: none;
+        color: var(--lightgreen-text);
+        border: var(--lightgreen-text) solid 1px;
+        padding: 1rem 1.5rem;
+        font-size: 20px;
+        margin-right: 30px;//
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        &:hover {
+          border: #fff solid 2px;
+          background: var(--lightgreen-hover);
+          transition: 0.2s ease;
+          color: #fff;
+        }
+      } */
+      .github,
       .resume {
         text-decoration: none;
         color: var(--lightgreen-text);
         border: var(--lightgreen-text) solid 1px;
         padding: 1rem 1.5rem;
         font-size: 20px;
-        /* margin-right: 30px; */
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        &:hover {
-          border: #fff solid 2px;
-          background: var(--lightgreen-hover);
-          transition: 0.2s ease;
-          color: #fff;
-        }
-      }
-      .github {
-        text-decoration: none;
-        color: var(--lightgreen-text);
-        border: var(--lightgreen-text) solid 1px;
-        padding: 1rem 1.5rem;
-        font-size: 20px;
         margin-right: 30px;
-        border-radius: 10px;
+        border-radius: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
         &:hover {
-          border: #fff solid 2px;
+          /* border: solid 2px; */
           background: var(--lightgreen-hover);
           transition: 0.2s ease;
           color: #fff;
         }
       }
+    }
+    /* @media only screen and (max-width: 450px) {
+      .home-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .big-fonts h2 {
+        font-size: 2.5rem;
+      }
+      .links {
+        flex-direction: column;
+      }
+      .links a {
+        width: 100%;
+      }
+    } */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .home-content {
+      /* display: flex;
+        flex-direction: column; */
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+    .links {
+      flex-direction: column;
+    }
+    .resume,
+    .github {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      /* border-radius: ; */
+    }
+    .links a {
+      /* width: 100%; */
     }
   }
 
@@ -134,7 +175,7 @@ export default function Home() {
         <div className="links">
           <a
             className="resume"
-            href="http://"
+            href="https://drive.google.com/file/d/1bsoxIn43pZLXjJjlhiGG6wWKwhNH0b4w/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

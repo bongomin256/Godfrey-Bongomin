@@ -17,6 +17,7 @@ const ContactStyle = styled.div`
       h4 {
         text-align: center;
         margin-bottom: 2.5rem;
+        color: white;
       }
     }
     .container {
@@ -109,6 +110,10 @@ const ContactStyle = styled.div`
         display: flex;
         flex-direction: column;
       }
+      .contact-header h1 {
+        text-align: center;
+        margin-bottom: 1.2rem;
+      }
       .container {
         flex-direction: column;
         gap: 3rem;
@@ -124,6 +129,14 @@ const ContactStyle = styled.div`
         font-size: 1rem;
       }
     }
+    /* @media only screen and (max-width: 480px) {
+      .contact-info-item {
+        padding: 0.6rem 0.8rem;
+      }
+      .contact-info-icon {
+        font-size: 1rem;
+      }
+    } */
   }
 `;
 
