@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdClose, MdMenu } from "react-icons/md";
+
 const NavMenuStyle = styled.div`
   position: fixed;
   z-index: 100;
@@ -20,7 +21,7 @@ const NavMenuStyle = styled.div`
       font-weight: 700;
       /* font-size: 4rem; */
     }
-    ul {
+    .nav-links {
       display: flex;
       justify-content: space-between;
       .close-nav-icon {
@@ -40,6 +41,7 @@ const NavMenuStyle = styled.div`
           font-size: 20px;
           text-decoration: none;
           padding: 1rem 1rem;
+          cursor: pointer;
           &:hover {
             color: var(--lightgreen-text);
           }
@@ -93,6 +95,12 @@ const NavMenuStyle = styled.div`
         }
       } */
     }
+    .mobile-menu {
+      display: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
     .mobile-nav-icon {
       color: white;
       position: absolute;
@@ -108,18 +116,61 @@ const NavMenuStyle = styled.div`
       display: none;
       color: white;
     } */
-    @media only screen and (max-width: 768px) {
+    /* @media only screen and (max-width: 768px) {
       .mobile-nav-icon {
         display: block;
       }
       .close-nav-icon {
         display: block;
       }
+    } */
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-link-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: var(--lightdark-bg);
+        /* left: 0; */
+        /* top: 75px; */
+        right: 1rem;
+        top: 1rem;
+        /* width: 4rem; */
+        width: 25%;
+        transition: all 0.5s ease-out;
+        border-radius: 10px;
+        li {
+          a {
+            text-decoration: none;
+            color: var(--grey-text);
+            font-size: 20px;
+            padding: 1rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+              color: var(--lightgreen-text);
+            }
+          }
+        }
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+      /* li {
+        text-decoration: none;
+        color: var(--grey-text);
+      } */
     }
   }
 `;
 
 export default function NavMenu() {
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <NavMenuStyle>
       <header>
@@ -128,14 +179,18 @@ export default function NavMenu() {
         <div className="my-name">
           <h1>Godfrey Bongomin</h1>
         </div>
-        <div className="mobile-nav-icon">
-          <MdMenu />
-        </div>
+        {/* <div className="mobile-nav-icon">
+          {isMobile ? <MdMenu /> : <}
+          
+        </div> */}
 
-        <ul>
-          <div className="close-nav-icon">
-            <MdClose />
-          </div>
+        <ul
+          className={isMobile ? "nav-link-mobile" : "nav-links"}
+          onClick={() => setIsMobile(false)}
+        >
+          {/* <div className="close-nav-icon">
+            {isMobile ? <MdMenu /> :<MdClose />}
+          </div> */}
 
           <li>
             <NavLink to="/" exact>
@@ -166,6 +221,9 @@ export default function NavMenu() {
             </a>
           </li>
         </ul>
+        <div className="mobile-menu" onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <MdClose /> : <MdMenu />}
+        </div>
       </header>
     </NavMenuStyle>
   );

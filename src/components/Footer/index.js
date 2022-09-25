@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 const FooterStyle = styled.div`
   .centered {
@@ -16,6 +15,8 @@ const FooterStyle = styled.div`
       padding-bottom: 1rem;
 
       .flex-child {
+        /* flex: 1; */
+
         /* margin: 0 auto; */
         /* align-content: flex-start; */
         h4 {
