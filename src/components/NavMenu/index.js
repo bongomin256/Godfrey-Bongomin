@@ -138,18 +138,23 @@ const NavMenuStyle = styled.div`
         /* left: 0; */
         /* top: 75px; */
         right: 1rem;
-        top: 1rem;
+        top: 75px;
         /* width: 4rem; */
-        width: 25%;
+        width: 40%;
         transition: all 0.5s ease-out;
         border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         li {
+          text-align: center;
+          margin-bottom: 12px;
+
           a {
             text-decoration: none;
             color: var(--grey-text);
             font-size: 20px;
             padding: 1rem 1rem;
-            text-align: center;
+            /* text-align: center; */
             cursor: pointer;
             &:hover {
               color: var(--lightgreen-text);
@@ -157,14 +162,90 @@ const NavMenuStyle = styled.div`
           }
         }
       }
+      .active {
+        color: white;
+      }
+      #resume {
+        border: 1px solid var(--lightgreen-text);
+        color: var(--lightgreen-text);
+        border-radius: 5px;
+        padding: 10px 7px;
+        cursor: pointer;
+        &:hover {
+          background: var(--lightgreen-hover);
+        }
+      }
 
       .mobile-menu {
         display: block;
+        /*  */
+        font-size: 30px;
+        position: absolute;
+        border: none;
+        outline: none;
+        right: 25px;
       }
       /* li {
         text-decoration: none;
         color: var(--grey-text);
       } */
+    }
+    @media (max-width: 450px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu {
+        display: block;
+        /*  */
+        font-size: 30px;
+        position: absolute;
+        border: none;
+        outline: none;
+        /* background-color: var(--lightdark-bg); */
+        /* top: 5px; */
+        right: 25px;
+      }
+      .nav-link-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        /* background-color: var(--lightdark-bg); */
+        /* left: 0; */
+        top: 75px;
+        /* right: 1rem;
+        top: 1rem; */
+        /* width: 4rem; */
+        width: 50%;
+        transition: all 0.5s ease-out;
+        /* border-radius: 10px; */
+        li {
+          text-align: center;
+          margin-bottom: 12px;
+
+          a {
+            text-decoration: none;
+            color: var(--grey-text);
+            font-size: 20px;
+            padding: 1rem 1rem;
+            /* text-align: center; */
+            cursor: pointer;
+
+            &:hover {
+              color: var(--lightgreen-text);
+            }
+          }
+          .active {
+            color: white;
+          }
+          #resume {
+            border: 1px solid var(--lightgreen-text);
+            color: var(--lightgreen-text);
+            border-radius: 5px;
+            padding: 10px 7px;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 `;
