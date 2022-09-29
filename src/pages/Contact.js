@@ -35,7 +35,8 @@ const ContactStyle = styled.div`
         // }
         .contact-info-item {
           background-color: var(--lightdark-bg);
-          padding: 1rem 1.2rem;
+          /* padding: 1rem 1.2rem; */
+          padding: 0.8rem 1rem;
           border-radius: 10px;
           display: flex;
           align-items: center;
@@ -129,12 +130,17 @@ const ContactStyle = styled.div`
         font-size: 1rem;
       }
     }
-    /* @media only screen and (max-width: 480px) {
+    /* @media only screen and (max-width: 450px) {
       .contact-info-item {
         padding: 0.6rem 0.8rem;
       }
       .contact-info-icon {
+        height: 45px;
+        width: 45px;
         font-size: 1rem;
+      }
+      .contact-info-content {
+        padding: 0.8rem;
       }
     } */
   }

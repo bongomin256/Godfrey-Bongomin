@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import localExchange from "../../images/local_exchange_hub_homepage.png";
 import RRG from "../../images/RRG.png";
@@ -10,13 +10,16 @@ const ProjectStyles = styled.div`
   padding: 200px 0;
   background-color: var(--dark-bg);
   color: var(--grey-text);
+
   .container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+
     .project-heading {
       margin-bottom: 2.2rem;
     }
+
     .pro-items {
       .item {
         display: flex;
@@ -25,6 +28,7 @@ const ProjectStyles = styled.div`
         /* max-width: 800px; //
         margin: 0 auto; // */
         margin-bottom: 100px;
+
         //hover of the image
         &:hover .img img {
           // making the image zoom in.
@@ -42,6 +46,7 @@ const ProjectStyles = styled.div`
           //making the transformation smooth;
           transition: 0.3s ease transform;
         }
+
         .img {
           position: relative;
           border-radius: 12px;
@@ -50,17 +55,18 @@ const ProjectStyles = styled.div`
           //   overflow: hidden;
           //   box-shadow: 0 0 20px white;
         }
+
         //applying the overlay color on the image
-        /* .img::after {
+        .img::after {
           position: absolute;
           content: "";
           right: 0;
           left: 0;
           height: 100%;
           width: 100%;
-          background-color: var(--lightgreen-text); //
-          opacity: 0.5;
-        } */
+          background-color: var(--lightgreen-hover); //
+          /* opacity: 0.5; */
+        }
 
         .right {
           // display: flex;
@@ -76,6 +82,7 @@ const ProjectStyles = styled.div`
           /* height: 300px; */
           box-shadow: 0 0 20px white;
           z-index: 2;
+
           h2 {
             font-size: 1.2rem;
             margin-bottom: 1.4rem;
@@ -83,30 +90,37 @@ const ProjectStyles = styled.div`
             color: #fff;
             font-weight: bold;
           }
+
           h4 {
             font-size: 1rem;
             color: var(--lightgreen-text);
           }
+
           p {
             font-size: 0.8rem;
           }
         }
+
         .left {
           flex: 2;
         }
       }
+
       // reversing in the even number of the project items
       .item:nth-child(even) {
         flex-direction: row-reverse;
       }
+
       // this is making sure the reverse is the same looking as odd items
       .item:nth-child(even) .right {
         margin-left: 0;
       }
+
       // this is making sure the reverse is the same looking as odd items
       .item:nth-child(even) .left {
         margin-left: -150px;
       }
+
       .btn {
         background-color: var(--lightgreen-text);
         color: var(--dark-bg);
@@ -114,33 +128,68 @@ const ProjectStyles = styled.div`
       }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media (max-width: 768px) {
       .item {
         flex-direction: column;
       }
+
       .item .left {
         width: 100%;
       }
+
       .item .right {
         width: 90%;
-        margin-left: 0;
+        /* margin: 0 auto; */
+        /* margin-left: 50px; */
+        margin-right: -150px;
+
         margin-top: -150px;
       }
+
       .item:nth-child(even) {
         flex-direction: column;
       }
+
       .item:nth-child(even) .left {
         margin-left: 0;
       }
     }
 
-    @media only screen and (max-width: 450px) {
+    @media (max-width: 450px) {
+      .item {
+        flex-direction: column;
+      }
+
+      .item .left {
+        width: 100%;
+      }
+
+      .item .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        /* margin: 0 auto; */
+        /* margin-left: 50px; */
+        margin-right: -150px;
+
+        margin-top: -70px;
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+        }
+      }
+      /* 
       .buttons {
         flex-direction: column;
       }
+
       .buttons a {
         width: 100%;
-      }
+      } */
     }
   }
 `;
@@ -149,7 +198,7 @@ export default function Projects() {
   return (
     <>
       <ProjectStyles>
-        <div className="container">
+        <section className="container">
           <h2 className="project-heading" data-ouline="Projects">
             Projects
           </h2>
@@ -317,7 +366,7 @@ export default function Projects() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </ProjectStyles>
     </>
   );

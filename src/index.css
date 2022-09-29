@@ -58,42 +58,5 @@ a {
 
 
 
-/* @media only screen and (max-width: 480px) {
-  .buttons{
-    flex-direction: column;
-  }
-} */
-
-@media only screen and (max-width: 768px) {
-
-  /* .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .item {
-    flex-direction: column;
-  }
-
-  .left {
-    width: 100%;
-  } */
-
-  .right {
-    /* width: 90%;
-    width: 300px;
-    margin: 0 auto;
-    margin-left: 150px; */
-    /* margin-top: -150px; */
-
-  }
-  /* .item:nth-child(even) {
-    flex-direction: column;
-  }
-  
-  .item:nth-child(even) .left {
-     margin-left: 0;
-  } */
-
-}
 
 
