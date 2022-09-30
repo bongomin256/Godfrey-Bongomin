@@ -129,67 +129,66 @@ const ProjectStyles = styled.div`
     }
 
     @media (max-width: 768px) {
-      .item {
-        flex-direction: column;
-      }
+      .pro-items {
+        .item {
+          flex-direction: column;
+          .left {
+            width: 100%;
+          }
+          .right {
+            width: 90%;
+            margin: 0 auto;
+            /* margin-left: 50px; */
+            /* margin-right: -150px; */
 
-      .item .left {
-        width: 100%;
-      }
+            margin-top: -150px;
+          }
+        }
 
-      .item .right {
-        width: 90%;
-        /* margin: 0 auto; */
-        /* margin-left: 50px; */
-        margin-right: -150px;
+        .item:nth-child(even) {
+          flex-direction: column;
+        }
 
-        margin-top: -150px;
-      }
-
-      .item:nth-child(even) {
-        flex-direction: column;
-      }
-
-      .item:nth-child(even) .left {
-        margin-left: 0;
+        .item:nth-child(even) .left {
+          margin-left: 0;
+        }
+        .item:nth-child(even) .right {
+          margin-right: 0;
+        }
       }
     }
 
     @media (max-width: 450px) {
-      .item {
-        flex-direction: column;
-      }
-
-      .item .left {
-        width: 100%;
-      }
-
-      .item .right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 90%;
-        /* margin: 0 auto; */
-        /* margin-left: 50px; */
-        margin-right: -150px;
-
-        margin-top: -70px;
-        .buttons {
-          display: flex;
+      .pro-items {
+        .item {
           flex-direction: column;
-          gap: 10px;
-          width: 100%;
+          .left {
+            width: 100%;
+          }
+          .right {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: -70px;
+            .buttons {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              width: 100%;
+            }
+          }
+        }
+
+        .item:nth-child(even) {
+          flex-direction: column;
+        }
+
+        .item:nth-child(even) .left {
+          margin-left: 0;
+        }
+        .item:nth-child(even) .right {
+          margin-right: 0;
         }
       }
-      /* 
-      .buttons {
-        flex-direction: column;
-      }
-
-      .buttons a {
-        width: 100%;
-      } */
     }
   }
 `;
