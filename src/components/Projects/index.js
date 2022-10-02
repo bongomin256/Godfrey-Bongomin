@@ -7,7 +7,9 @@ import weather from "../../images/weather.png";
 import workPlanner from "../../images/workdayPlanner.png";
 
 const ProjectStyles = styled.div`
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  /* padding: 200px 0; */
   background-color: var(--dark-bg);
   color: var(--grey-text);
 
@@ -122,13 +124,23 @@ const ProjectStyles = styled.div`
       }
 
       .btn {
-        background-color: var(--lightgreen-text);
-        color: var(--dark-bg);
+        color: var(--lightgreen-text);
+        border: var(--lightgreen-text) solid 1px;
+        border-radius: 10px;
+        /* background-color: var(--lightgreen-text); */
+        /* color: var(--dark-bg); */
         margin-right: 16px;
+        &:hover {
+          background: var(--lightgreen-hover);
+          transition: 0.2s ease;
+        }
       }
     }
 
     @media (max-width: 768px) {
+      .project-heading {
+        text-align: center;
+      }
       .pro-items {
         .item {
           flex-direction: column;
@@ -140,8 +152,12 @@ const ProjectStyles = styled.div`
             margin: 0 auto;
             /* margin-left: 50px; */
             /* margin-right: -150px; */
-
             margin-top: -150px;
+            .pro-title,
+            .buttons,
+            .sub-title {
+              text-align: center;
+            }
           }
         }
 

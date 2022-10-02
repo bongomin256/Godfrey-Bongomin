@@ -4,7 +4,8 @@ import myimage from "../../src/images/myphoto.jpeg";
 import { AiFillCaretRight } from "react-icons/ai";
 
 const AboutStyle = styled.div`
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 100px;
   background-color: var(--dark-bg);
   color: var(--grey-text);
   .about-content {
@@ -22,18 +23,12 @@ const AboutStyle = styled.div`
       gap: 60px;
 
       .about-content-left {
-        // margin-right: 20px;
-        /* flex: 1; // */
         display: flex;
         align-items: center;
         justify-content: center;
 
         img {
-          /* width: 100%; */
-          width: 300px; //
-          /* height: auto; */
-          /* border: 4px solid Var(--grey-text); */
-          // border-radius: 50%;
+          width: 300px;
 
           border-radius: 10px;
           z-index: 1;
@@ -51,11 +46,9 @@ const AboutStyle = styled.div`
           margin-bottom: 45px;
           margin-left: 45px;
           transition: var(--transition);
-          /* z-index: -1; */
         }
       }
       .about-content-right {
-        /* flex: 1; // */
         .tech {
           display: flex;
           justify-content: space-between;
@@ -79,12 +72,22 @@ const AboutStyle = styled.div`
       flex-direction: column;
     }
     .about-header {
-      /* margin-right: 50%; */
       text-align: center;
     }
   }
 
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 430px) {
+    .about-content-right {
+      .tech {
+        .tech__list {
+          ul {
+            li {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -110,6 +113,16 @@ export default function About() {
               >
                 GODFREY BONGOMIN
               </strong>{" "}
+              , but i go by{" "}
+              <strong
+                style={{
+                  color: "white",
+                  fontSize: "18px",
+                  letterSpacing: "3px",
+                }}
+              >
+                Bongo!
+              </strong>
             </p>
             <p>
               I have 8 years of experience working in production, logistics,

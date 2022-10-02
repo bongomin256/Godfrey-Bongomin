@@ -6,7 +6,9 @@ import styled from "styled-components";
 // require("dotenv").config();
 
 const ContactStyle = styled.div`
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  /* padding: 200px 0; */
   background-color: var(--dark-bg);
   color: var(--grey-text);
   .contact {
@@ -209,7 +211,7 @@ export default function Contact() {
               </div>
               <div className="contact-info-content">
                 <h4>Phone</h4>
-                <p>425-395-0516</p>
+                <p>(425)-395-0516</p>
               </div>
             </div>
             <div className="contact-info-item">

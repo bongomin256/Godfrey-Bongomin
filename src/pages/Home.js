@@ -4,7 +4,9 @@ import { BsArrowUpRight } from "react-icons/bs";
 import styled from "styled-components";
 
 const HomeStyle = styled.div`
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  /* padding: 200px 0; */
   background-color: var(--dark-bg);
   color: var(--grey-text);
 
@@ -94,7 +96,7 @@ const HomeStyle = styled.div`
           /* border: solid 2px; */
           background: var(--lightgreen-hover);
           transition: 0.2s ease;
-          color: #fff;
+          /* color: #fff; */
         }
       }
     }

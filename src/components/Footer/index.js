@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 const FooterStyle = styled.div`
   .centered {
@@ -46,6 +47,7 @@ const FooterStyle = styled.div`
       padding: 0.8rem 0.6rem;
 
       p {
+        margin-left: 3rem;
       }
     }
   }
@@ -77,24 +79,28 @@ export default function Footer() {
             <h4>Important Links</h4>
             <ul>
               <li>
-                <a href="/">Home</a>
+                {/* <a href="/">Home</a> */}
+                <Link to="/">Home</Link>
               </li>
 
               <li>
-                <a href="/about">About</a>
+                {/* <a href="/about">About</a> */}
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="/work">Work</a>
+                {/* <a href="/work">Work</a> */}
+                <Link to="/work">Work</Link>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                {/* <a href="/contact">Contact</a> */}
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
           <div className="flex-child">
             <h4>Contact info</h4>
             <ul>
-              <li>(425) 3950516</li>
+              <li>(425)-395-0516</li>
               <li>
                 <a
                   href="mailto:godfrey.bongomin92@gmail.com"
