@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
+
 import emailjs from "@emailjs/browser";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import styled from "styled-components";
-
-// require("dotenv").config();
 
 const ContactStyle = styled.div`
   padding-top: 200px;
@@ -29,15 +28,8 @@ const ContactStyle = styled.div`
       position: relative;
       gap: 10rem;
       .contact-info {
-        /* padding: 20px; */
-
-        // #contact-info-item {
-        //   margin-bottom: 20px;
-        //   // background-color: var(--lightdark-bg);
-        // }
         .contact-info-item {
           background-color: var(--lightdark-bg);
-          /* padding: 1rem 1.2rem; */
           padding: 0.8rem 1rem;
           border-radius: 10px;
           display: flex;
@@ -50,7 +42,6 @@ const ContactStyle = styled.div`
             font-size: 2rem;
             background-color: white;
             text-align: center;
-            /* padding: 14px; */
             border-radius: 50%;
             line-height: 70px;
             color: var(--dark-bg);
@@ -65,7 +56,6 @@ const ContactStyle = styled.div`
       }
       .contact-form {
         .form-group {
-          // background-color: var(--lightdark-bg);
           margin-bottom: 1rem;
 
           display: flex;
@@ -97,8 +87,6 @@ const ContactStyle = styled.div`
           background-color: var(--dark-bg);
           border: 2px solid var(--grey-text);
           color: var(--grey-text);
-          // outline: none;
-          // border: none;
           border-radius: 10px;
           margin-top: 10px;
           &:hover {
@@ -132,19 +120,6 @@ const ContactStyle = styled.div`
         font-size: 1rem;
       }
     }
-    /* @media only screen and (max-width: 450px) {
-      .contact-info-item {
-        padding: 0.6rem 0.8rem;
-      }
-      .contact-info-icon {
-        height: 45px;
-        width: 45px;
-        font-size: 1rem;
-      }
-      .contact-info-content {
-        padding: 0.8rem;
-      }
-    } */
   }
 `;
 
@@ -264,7 +239,6 @@ export default function Contact() {
                 />
               </div>
               <div className="button">
-                {/* <button type="submit">Send</button> */}
                 <input id="button" type="submit" value="Send"></input>
               </div>
             </form>

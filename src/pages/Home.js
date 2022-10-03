@@ -19,9 +19,6 @@ const HomeStyle = styled.div`
       h2 {
         font-size: 4rem;
         font-weight: 700;
-        /* span {
-          color: red;
-        } */
       }
       h4 {
         font-size: 2.5rem;
@@ -31,26 +28,7 @@ const HomeStyle = styled.div`
           animation: typewriter 3.5s steps(38) normal,
             blinkTextCursor 0.5s infinite;
         }
-
-        @keyframes typewriter {
-          from {
-            width: 0;
-          }
-          to {
-            width: 500;
-          }
-        }
       }
-
-      /* @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: orange;
-        }
-      } */
     }
     .home-texts {
       font-size: 20px;
@@ -60,25 +38,7 @@ const HomeStyle = styled.div`
       display: flex;
       margin-top: 25px;
       gap: 30px;
-      /* .resume {
-        text-decoration: none;
-        color: var(--lightgreen-text);
-        border: var(--lightgreen-text) solid 1px;
-        padding: 1rem 1.5rem;
-        font-size: 20px;
-        margin-right: 30px;//
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        &:hover {
-          border: #fff solid 2px;
-          background: var(--lightgreen-hover);
-          transition: 0.2s ease;
-          color: #fff;
-        }
-      } */
+
       .github,
       .resume {
         text-decoration: none;
@@ -93,34 +53,15 @@ const HomeStyle = styled.div`
         justify-content: center;
         gap: 5px;
         &:hover {
-          /* border: solid 2px; */
           background: var(--lightgreen-hover);
           transition: 0.2s ease;
-          /* color: #fff; */
         }
       }
     }
-    /* @media only screen and (max-width: 450px) {
-      .home-content {
-        display: flex;
-        flex-direction: column;
-      }
-      .big-fonts h2 {
-        font-size: 2.5rem;
-      }
-      .links {
-        flex-direction: column;
-      }
-      .links a {
-        width: 100%;
-      }
-    } */
   }
 
   @media only screen and (max-width: 768px) {
     .home-content {
-      /* display: flex;
-        flex-direction: column; */
     }
     h2 {
       font-size: 1.8rem;
@@ -135,21 +76,8 @@ const HomeStyle = styled.div`
     .github {
       width: 100%;
       padding: 0.8rem 1rem;
-      /* border-radius: ; */
-    }
-    .links a {
-      /* width: 100%; */
     }
   }
-
-  /* @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  } */
 `;
 
 export default function Home() {

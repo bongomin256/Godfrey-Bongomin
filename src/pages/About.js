@@ -113,7 +113,7 @@ export default function About() {
               >
                 GODFREY BONGOMIN
               </strong>{" "}
-              , but i go by{" "}
+              , but I go by{" "}
               <strong
                 style={{
                   color: "white",

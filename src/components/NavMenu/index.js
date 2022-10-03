@@ -19,7 +19,6 @@ const NavMenuStyle = styled.div`
     h1 {
       color: var(--lightgreen-text);
       font-weight: 700;
-      /* font-size: 4rem; */
     }
     .nav-links {
       display: flex;
@@ -30,12 +29,6 @@ const NavMenuStyle = styled.div`
         position: absolute;
       }
       li {
-        /* a {
-          &:hover {
-            color: var(--lightgreen-text);
-          }
-        }
-      } */
         a {
           color: var(--grey-text);
           font-size: 20px;
@@ -63,37 +56,6 @@ const NavMenuStyle = styled.div`
           }
         }
       }
-      /* .mobile-nav-icon {
-        color: white;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        width: 4rem;
-        cursor: pointer;
-        display: none;
-        outline: none;
-        color: white;
-      } */
-      /* .close-nav-icon {
-        display: none;
-      } */
-      /* @media only screen and (max-width: 768px) {
-        .mobile-nav-icon {
-          display: block;
-        }
-        .close-nav-icon {
-          display: block;
-        }
-      }
-
-      @media only screen and (max-width: 420px) {
-        .mobile-nav-icon {
-          display: block;
-        }
-        .close-nav-icon {
-          display: block;
-        }
-      } */
     }
     .mobile-menu {
       display: none;
@@ -110,20 +72,7 @@ const NavMenuStyle = styled.div`
       cursor: pointer;
       display: none;
       outline: none;
-      /* color: white; */
     }
-    /* .close-nav-icon {
-      display: none;
-      color: white;
-    } */
-    /* @media only screen and (max-width: 768px) {
-      .mobile-nav-icon {
-        display: block;
-      }
-      .close-nav-icon {
-        display: block;
-      }
-    } */
 
     @media (max-width: 768px) {
       .nav-links {
@@ -135,11 +84,8 @@ const NavMenuStyle = styled.div`
         display: block;
         list-style: none;
         background-color: var(--lightdark-bg);
-        /* left: 0; */
-        /* top: 75px; */
         right: 1rem;
         top: 75px;
-        /* width: 4rem; */
         width: 40%;
         transition: all 0.5s ease-out;
         border-radius: 10px;
@@ -148,13 +94,11 @@ const NavMenuStyle = styled.div`
         li {
           text-align: center;
           margin-bottom: 12px;
-
           a {
             text-decoration: none;
             color: var(--grey-text);
             font-size: 20px;
             padding: 1rem 1rem;
-            /* text-align: center; */
             cursor: pointer;
             &:hover {
               color: var(--lightgreen-text);
@@ -185,10 +129,6 @@ const NavMenuStyle = styled.div`
         outline: none;
         right: 25px;
       }
-      /* li {
-        text-decoration: none;
-        color: var(--grey-text);
-      } */
     }
     @media (max-width: 450px) {
       .nav-links {
@@ -196,28 +136,19 @@ const NavMenuStyle = styled.div`
       }
       .mobile-menu {
         display: block;
-        /*  */
         font-size: 30px;
         position: absolute;
         border: none;
         outline: none;
-        /* background-color: var(--lightdark-bg); */
-        /* top: 5px; */
         right: 25px;
       }
       .nav-link-mobile {
         position: absolute;
         display: block;
         list-style: none;
-        /* background-color: var(--lightdark-bg); */
-        /* left: 0; */
         top: 75px;
-        /* right: 1rem;
-        top: 1rem; */
-        /* width: 4rem; */
         width: 50%;
         transition: all 0.5s ease-out;
-        /* border-radius: 10px; */
         li {
           text-align: center;
           margin-bottom: 12px;
@@ -227,7 +158,6 @@ const NavMenuStyle = styled.div`
             color: var(--grey-text);
             font-size: 20px;
             padding: 1rem 1rem;
-            /* text-align: center; */
             cursor: pointer;
 
             &:hover {
@@ -255,24 +185,14 @@ export default function NavMenu() {
   return (
     <NavMenuStyle>
       <header>
-        {/* mobile icon */}
-
         <div className="my-name">
           <h1>Godfrey Bongomin</h1>
         </div>
-        {/* <div className="mobile-nav-icon">
-          {isMobile ? <MdMenu /> : <}
-          
-        </div> */}
 
         <ul
           className={isMobile ? "nav-link-mobile" : "nav-links"}
           onClick={() => setIsMobile(false)}
         >
-          {/* <div className="close-nav-icon">
-            {isMobile ? <MdMenu /> :<MdClose />}
-          </div> */}
-
           <li>
             <NavLink to="/" exact>
               Home
@@ -302,6 +222,7 @@ export default function NavMenu() {
             </a>
           </li>
         </ul>
+        {/* mobile nav menu */}
         <div className="mobile-menu" onClick={() => setIsMobile(!isMobile)}>
           {isMobile ? <MdClose /> : <MdMenu />}
         </div>

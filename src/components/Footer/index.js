@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 const FooterStyle = styled.div`
   .centered {
-    // border: 2px solid red;
-    // margin-top: 20px;
     .main-container {
       background-color: var(--lightdark-bg);
       color: var(--grey-text);
@@ -12,14 +10,9 @@ const FooterStyle = styled.div`
       align-items: center;
       justify-content: space-around;
       padding-top: 1.5rem;
-      /* padding-top: 2.5rem; */
       padding-bottom: 1rem;
 
       .flex-child {
-        /* flex: 1; */
-
-        /* margin: 0 auto; */
-        /* align-content: flex-start; */
         h4 {
           color: white;
         }
@@ -47,7 +40,7 @@ const FooterStyle = styled.div`
       padding: 0.8rem 0.6rem;
 
       p {
-        margin-left: 3rem;
+        margin-left: 2rem;
       }
     }
   }
@@ -79,20 +72,16 @@ export default function Footer() {
             <h4>Important Links</h4>
             <ul>
               <li>
-                {/* <a href="/">Home</a> */}
                 <Link to="/">Home</Link>
               </li>
 
               <li>
-                {/* <a href="/about">About</a> */}
                 <Link to="/about">About</Link>
               </li>
               <li>
-                {/* <a href="/work">Work</a> */}
                 <Link to="/work">Work</Link>
               </li>
               <li>
-                {/* <a href="/contact">Contact</a> */}
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>

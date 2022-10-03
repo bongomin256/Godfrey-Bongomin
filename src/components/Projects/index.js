@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import localExchange from "../../images/local_exchange_hub_homepage.png";
 import RRG from "../../images/RRG.png";
@@ -27,8 +26,6 @@ const ProjectStyles = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        /* max-width: 800px; //
-        margin: 0 auto; // */
         margin-bottom: 100px;
 
         //hover of the image
@@ -41,10 +38,6 @@ const ProjectStyles = styled.div`
         img {
           width: 100%;
           height: auto;
-          /* height: 500px */
-          //   overflow: hidden;
-          //   border-radius: 12px;
-          //   box-shadow: 0 0 20px white;
           //making the transformation smooth;
           transition: 0.3s ease transform;
         }
@@ -53,9 +46,6 @@ const ProjectStyles = styled.div`
           position: relative;
           border-radius: 12px;
           overflow: hidden;
-          /* height: 500px; // */
-          //   overflow: hidden;
-          //   box-shadow: 0 0 20px white;
         }
 
         //applying the overlay color on the image
@@ -71,24 +61,17 @@ const ProjectStyles = styled.div`
         }
 
         .right {
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
-          // flex-direction: column;
-
           flex: 1;
           margin-left: -150px;
           background-color: var(--dark-bg);
           padding: 2rem 1rem;
           border-radius: 12px;
-          /* height: 300px; */
           box-shadow: 0 0 20px white;
           z-index: 2;
 
           h2 {
             font-size: 1.2rem;
             margin-bottom: 1.4rem;
-            // margin-top: 1rem;
             color: #fff;
             font-weight: bold;
           }
@@ -127,8 +110,6 @@ const ProjectStyles = styled.div`
         color: var(--lightgreen-text);
         border: var(--lightgreen-text) solid 1px;
         border-radius: 10px;
-        /* background-color: var(--lightgreen-text); */
-        /* color: var(--dark-bg); */
         margin-right: 16px;
         &:hover {
           background: var(--lightgreen-hover);
@@ -150,8 +131,6 @@ const ProjectStyles = styled.div`
           .right {
             width: 90%;
             margin: 0 auto;
-            /* margin-left: 50px; */
-            /* margin-right: -150px; */
             margin-top: -150px;
             .pro-title,
             .buttons,
@@ -225,7 +204,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="right">
-                <h2 className="pro-title"> School Project</h2>
+                {/* <h2 className="pro-title"> School Project</h2> */}
                 <h4 className="sub-title"> Local Exchange Hub</h4>
                 <p className="pro-desc">
                   This is local exchange hub, my team and i designed this during
@@ -235,11 +214,6 @@ export default function Projects() {
                   exchange of something that some other user posted, other than
                   throwing it away to reduce waste and its impact to the
                   environment.
-                  {/* As a thrifty consumer that is conscious of waste and its
-                  impact on the environment, I want to be able to search my
-                  local area and find used goods that I need I also want to be
-                  able to post any of my own used goods that I would like to
-                  recycle rather than throw away. */}
                 </p>
                 <div className="buttons">
                   <a
@@ -268,7 +242,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="right">
-                <h2 className="pro-title"> School Project</h2>
+                {/* <h2 className="pro-title"> School Project</h2> */}
                 <h4 className="sub-title"> Random Recipe Generator</h4>
                 <p className="pro-desc">
                   This is Random Recipe Generator, a school group project, where
@@ -294,19 +268,6 @@ export default function Projects() {
                   >
                     App Link
                   </a>
-
-                  {/* <Link
-                    className="btn"
-                    to="https://github.com/rkutsel/local-exchange-hub"
-                  >
-                   Github Repo
-                  </Link> */}
-                  {/* <Link
-                    className="btn outline"
-                    to="https://local-exchange-hub.herokuapp.com/"
-                  >
-                    Preview
-                  </Link> */}
                 </div>
               </div>
             </div>
@@ -317,7 +278,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="right">
-                <h2 className="pro-title"> School Project</h2>
+                {/* <h2 className="pro-title"> School Project</h2> */}
                 <h4 className="sub-title"> Weather Dashboard</h4>
                 <p className="pro-desc">
                   This is a school individual project where we were tasked to
@@ -352,7 +313,7 @@ export default function Projects() {
                 </div>
               </div>
               <div className="right">
-                <h2 className="pro-title"> School Project</h2>
+                {/* <h2 className="pro-title"> School Project</h2> */}
                 <h4 className="sub-title"> Work Day Scheduler</h4>
                 <p className="pro-desc">
                   This is Work day planner application, it is like a to-do app
