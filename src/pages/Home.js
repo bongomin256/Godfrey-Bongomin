@@ -23,10 +23,38 @@ const HomeStyle = styled.div`
       h4 {
         font-size: 2.5rem;
         font-weight: 700;
-        span {
+        /* span {
           color: red;
           animation: typewriter 3.5s steps(38) normal,
             blinkTextCursor 0.5s infinite;
+        } */
+      }
+      .ani-mate {
+        display: flex;
+        .static-txt {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+        .dynamic-txt {
+          /* margin-left: 10px; */
+          li {
+            list-style: none;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: red;
+            position: relative;
+            &::after {
+              content: "";
+              left: 0;
+              position: absolute;
+              height: 100%;
+              /* width: 100%; */
+              width: 13ch;
+              border-left: 2px solid red;
+              animation: typing 3s steps(13) infinite;
+              background-color: var(--dark-bg);
+            }
+          }
         }
       }
     }
@@ -58,6 +86,16 @@ const HomeStyle = styled.div`
         }
       }
     }
+  }
+  @keyframes typing {
+    40%,
+    60% {
+      left: calc(100% + 30px);
+    }
+
+    /* 100% {
+      left: 0;
+    } */
   }
 
   @media only screen and (max-width: 768px) {
@@ -91,9 +129,18 @@ export default function Home() {
           <h2>
             <span>Godfrey</span> Bongomin.
           </h2>
-          <h4>
+          {/* this is animate section */}
+          <div class="ani-mate">
+            <div class="static-txt">a full-stack</div>
+            <ul class="dynamic-txt">
+              <li>
+                <span>Web Developer</span>
+              </li>
+            </ul>
+          </div>
+          {/* <h4>
             a full-stack<span> Web Developer</span>
-          </h4>
+          </h4> */}
         </div>
         <div className="home-texts">
           <p>
