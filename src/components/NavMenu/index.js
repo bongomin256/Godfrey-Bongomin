@@ -214,7 +214,7 @@ export default function NavMenu() {
           <li>
             <a
               id="resume"
-              href="https://drive.google.com/file/d/1bsoxIn43pZLXjJjlhiGG6wWKwhNH0b4w/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ADlePckdrtuAWiD0ge4m4dpV2A_vlZNz/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
