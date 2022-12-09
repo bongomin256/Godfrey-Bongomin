@@ -148,13 +148,14 @@ export default function Home() {
             </ul>
           </div> */}
           <h4>
-            a full-stack<span> Web Developer</span>
+            a <span> Frontend Developer</span>
           </h4>
         </div>
         <div className="home-texts">
           <p>
-            I am a software developer who designs and develops websites. I bring
-            your ideas to life in the form of a website.{" "}
+            I am a frontend developer with a backend experience who designs and
+            develops websites. I bring your ideas to life in the form of a
+            website.{" "}
           </p>
         </div>
 
