@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.97abb262.css",
-    "main.js": "/static/js/main.ed9f59d0.js",
-    "static/media/local_exchange_hub_homepage.png": "/static/media/local_exchange_hub_homepage.a98f17cd43e69be8a943.png",
-    "static/media/myphoto.jpeg": "/static/media/myphoto.48fab4d3ab1ceb71c42c.jpeg",
-    "static/media/RRG.png": "/static/media/RRG.dc5b4d7388574dcad517.png",
-    "static/media/weather.png": "/static/media/weather.cd53a705ad2caee416a1.png",
-    "static/media/workdayPlanner.png": "/static/media/workdayPlanner.ea4f1aef772905c29838.png",
-    "index.html": "/index.html",
-    "main.97abb262.css.map": "/static/css/main.97abb262.css.map",
-    "main.ed9f59d0.js.map": "/static/js/main.ed9f59d0.js.map"
+    "main.css": "/Godfrey-Bongomin/static/css/main.97abb262.css",
+    "main.js": "/Godfrey-Bongomin/static/js/main.ed5cb70c.js",
+    "static/media/local_exchange_hub_homepage.png": "/Godfrey-Bongomin/static/media/local_exchange_hub_homepage.a98f17cd43e69be8a943.png",
+    "static/media/myphoto.jpeg": "/Godfrey-Bongomin/static/media/myphoto.48fab4d3ab1ceb71c42c.jpeg",
+    "static/media/RRG.png": "/Godfrey-Bongomin/static/media/RRG.dc5b4d7388574dcad517.png",
+    "static/media/weather.png": "/Godfrey-Bongomin/static/media/weather.cd53a705ad2caee416a1.png",
+    "static/media/workdayPlanner.png": "/Godfrey-Bongomin/static/media/workdayPlanner.ea4f1aef772905c29838.png",
+    "index.html": "/Godfrey-Bongomin/index.html",
+    "main.97abb262.css.map": "/Godfrey-Bongomin/static/css/main.97abb262.css.map",
+    "main.ed5cb70c.js.map": "/Godfrey-Bongomin/static/js/main.ed5cb70c.js.map"
   },
   "entrypoints": [
     "static/css/main.97abb262.css",
-    "static/js/main.ed9f59d0.js"
+    "static/js/main.ed5cb70c.js"
   ]
 }
