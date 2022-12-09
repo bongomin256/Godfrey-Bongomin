@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Godfrey-Bongomin/static/css/main.97abb262.css",
-    "main.js": "/Godfrey-Bongomin/static/js/main.ed5cb70c.js",
+    "main.js": "/Godfrey-Bongomin/static/js/main.bfa4a104.js",
     "static/media/local_exchange_hub_homepage.png": "/Godfrey-Bongomin/static/media/local_exchange_hub_homepage.a98f17cd43e69be8a943.png",
     "static/media/myphoto.jpeg": "/Godfrey-Bongomin/static/media/myphoto.48fab4d3ab1ceb71c42c.jpeg",
     "static/media/RRG.png": "/Godfrey-Bongomin/static/media/RRG.dc5b4d7388574dcad517.png",
@@ -9,10 +9,10 @@
     "static/media/workdayPlanner.png": "/Godfrey-Bongomin/static/media/workdayPlanner.ea4f1aef772905c29838.png",
     "index.html": "/Godfrey-Bongomin/index.html",
     "main.97abb262.css.map": "/Godfrey-Bongomin/static/css/main.97abb262.css.map",
-    "main.ed5cb70c.js.map": "/Godfrey-Bongomin/static/js/main.ed5cb70c.js.map"
+    "main.bfa4a104.js.map": "/Godfrey-Bongomin/static/js/main.bfa4a104.js.map"
   },
   "entrypoints": [
     "static/css/main.97abb262.css",
-    "static/js/main.ed5cb70c.js"
+    "static/js/main.bfa4a104.js"
   ]
 }
