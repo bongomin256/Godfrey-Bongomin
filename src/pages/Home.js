@@ -22,7 +22,7 @@ const HomeStyle = styled.div`
       }
       h4 {
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 300;
         span {
           color: red;
           animation: typewriter 3.5s steps(38) normal,
@@ -74,10 +74,10 @@ const HomeStyle = styled.div`
         text-decoration: none;
         color: var(--lightgreen-text);
         border: var(--lightgreen-text) solid 1px;
-        padding: 1rem 1.5rem;
+        padding: 0.8rem 1rem;
         font-size: 20px;
         margin-right: 30px;
-        border-radius: 50px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -148,7 +148,7 @@ export default function Home() {
             </ul>
           </div> */}
           <h4>
-            a <span> Frontend Developer</span>
+            <span> Frontend Developer</span>
           </h4>
         </div>
         <div className="home-texts">
