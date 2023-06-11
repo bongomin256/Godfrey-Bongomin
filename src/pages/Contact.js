@@ -142,7 +142,7 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    // changed the public id
     emailjs
       .sendForm(
         process.env.REACT_APP_YOUR_SERVICE_ID,
